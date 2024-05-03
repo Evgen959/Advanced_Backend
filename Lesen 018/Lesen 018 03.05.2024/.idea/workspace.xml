@@ -1,16 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f2bb5d39-acfb-4e66-ab68-91518b10b05a" name="Changes" comment="" />
+    <list default="true" id="c406b88f-b175-4a75-af75-10b9a54ee63f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lesen 017/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lesen 017/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lesen 017/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lesen 017/Lesen 017.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lesen 017/Lesen 17 02.05.2024/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lesen 017/Lesen 17 02.05.2024/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lesen 017/Lesen 17 02.05.2024/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lesen 017/Lesen 17 02.05.2024/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lesen 017/Lesen 17 02.05.2024/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lesen 017/Lesen 17 02.05.2024/Lesen 17 02.05.2024.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lesen 017/Lesen 17 02.05.2024/src/Account.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lesen 017/Lesen 17 02.05.2024/src/Bank.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lesen 017/Lesen 17 02.05.2024/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lesen 017/Lesen 17 02.05.2024/src/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
+  "associatedIndex": 3
 }]]></component>
-  <component name="ProjectId" id="2fwmRptInDF81iOXJl7zdaApOnm" />
+  <component name="ProjectId" id="2fwsM5P7V4lPP8QQ4Qd2PWFRiDJ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -19,9 +40,9 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/evgen/Desktop/IT-kurs/Advanced Backend/Lesen 017",
-    "onboarding.tips.debug.path": "C:/Users/evgen/Desktop/IT-kurs/Advanced Backend/Lesen 018/Lesen 018 03.05.2024/src/Main.java"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true"
   }
 }]]></component>
   <component name="SharedIndexes">
@@ -34,11 +55,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f2bb5d39-acfb-4e66-ab68-91518b10b05a" name="Changes" comment="" />
-      <created>1714720509652</created>
+      <changelist id="c406b88f-b175-4a75-af75-10b9a54ee63f" name="Changes" comment="" />
+      <created>1714723423999</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1714720509652</updated>
+      <updated>1714723423999</updated>
     </task>
     <servers />
   </component>
