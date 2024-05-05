@@ -1,41 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="4c1d87b5-6216-4648-951f-624c39407727" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lesen 016/.idea/Lesen 001.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lesen 016/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lesen 016/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lesen 016/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lesen 016/untitled/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lesen 016/untitled/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lesen 016/untitled/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lesen 016/untitled/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lesen 016/untitled/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lesen 016/untitled/src/Person.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lesen 016/untitled/src/Truck.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lesen 016/untitled/untitled.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lesen 017.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lesen 018/Lesen 018 03.05.2024/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lesen 018/Lesen 018 03.05.2024/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lesen 018/Lesen 018 03.05.2024/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lesen 018/Lesen 018 03.05.2024/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lesen 018/Lesen 018 03.05.2024/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lesen 018/Lesen 018 03.05.2024/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lesen 018/Lesen 018 03.05.2024/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lesen 018/Lesen 018 03.05.2024/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lesen 018/Lesen 018 03.05.2024/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lesen 018/Lesen 018 03.05.2024/Lesen 018 03.05.2024.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lesen 018/Lesen 018 03.05.2024/src/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2fwsg7TF5lTDMzeJ7YQOvXCTXyy" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -48,7 +44,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/evgen/Desktop/IT-kurs/Advanced_Backend/Lesen 018/Lesen 18 03.05.2024"
   }
 }]]></component>
   <component name="RunManager">
