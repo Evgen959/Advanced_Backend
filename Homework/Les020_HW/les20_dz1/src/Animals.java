@@ -1,4 +1,4 @@
-public abstract class Animals {
+public class Animals {
     private String name;
     private  double feed;
 
