@@ -25,6 +25,7 @@ public class Bank {
         return "Bank:  " + title
                 +  "\nВсего счетов: "
                 //+ size
+                + listAccount.size()
                 + "\nСчета:\n"
                 + accuntsToString();
     }
