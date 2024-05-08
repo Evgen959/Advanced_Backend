@@ -25,6 +25,7 @@ public class Main {
             int inputtedInt = scanner.nextInt();
             if (inputtedInt != 0) {
                 arrayHandler.add(inputtedInt);
+                System.out.println(arrayHandler);
             }
             else {
                 break;   // выход из цикла
