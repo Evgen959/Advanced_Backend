@@ -8,11 +8,9 @@ public class Circle extends Figure {
 
     @Override
     public String toString() {
-        return "Circle{"
-                + super.toString()
+        return super.toString()
                 + " radius = " + radius
-                + " sm"
-                + '}';
+                + " sm";
     }
 
     public double area() {

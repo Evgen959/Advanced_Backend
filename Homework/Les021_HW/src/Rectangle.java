@@ -10,13 +10,11 @@ public class Rectangle extends Figure{
 
     @Override
     public String toString() {
-        return "Rectangle{"
-                + super.toString()
+        return  super.toString()
                 + " sideA = " + sideA
                 + " sm"
                 + " sideB = " + sideB
-                + " sm"
-                + '}';
+                + " sm";
     }
 
     public double area() {

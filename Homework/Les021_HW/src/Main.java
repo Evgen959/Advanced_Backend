@@ -21,8 +21,10 @@ public class Main {
         figures.add(new Rectangle("Rectangle 1", 5, 3));
         figures.add(new Rectangle("Rectangle 2", 2, 10));
 
+        System.out.println("---- List -----");
         System.out.println(figures);
 
+        System.out.println("--- Area ----");
         for (int i = 0; i < figures.size(); i++) {
             System.out.println("'" + figures.get(i).getNameFigure() + "' " + "S = " + figures.get(i).area() + " sm²");
         }
@@ -32,20 +34,28 @@ public class Main {
         for (int i = 0; i < figures.size(); i++) {
             sumFigures += figures.get(i).area();
         }
+        System.out.println("SumFigures = " + sumFigures + " sm²");
 
-        System.out.println(sumFigures);
 
+        for (int i = 0; i < figures.size(); i++) {
+            //System.out.println(figures.add(figures.get(figures.get(i) + ", " + "area = " + figures.get(i).area() + " sm²")));
+        }
+
+        System.out.println("---------------");
         figureMaxArea(figures);
 
 
     }
     private static String figureMaxArea ( List figures) {
         String nameFigure = "";
+
         for (int i = 0; i < figures.size(); i++) {
-            if (figures.get(i).area() < figures.get(i ++).area()) {
+            System.out.println(figures.get(i));
+           /* if (figures.get(i).area() < figures.get(i ++).area()) {
                 
             }
-            nameFigure = 
+            nameFigure =
+            */
 
         }
 

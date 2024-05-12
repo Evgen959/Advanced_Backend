@@ -9,11 +9,9 @@ public class Square extends Figure{
 
     @Override
     public String toString() {
-        return "Square{"
-                + super.toString()
+        return  super.toString()
                 + " sideA = " + sideA
-                + " sm"
-                + '}';
+                + " sm";
     }
 
     public double area() {
