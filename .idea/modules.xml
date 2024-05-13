@@ -26,6 +26,8 @@
       <module fileurl="file://$PROJECT_DIR$/konsul/les020/les020.iml" filepath="$PROJECT_DIR$/konsul/les020/les020.iml" />
       <module fileurl="file://$PROJECT_DIR$/Homework/Les020_HW/les20_dz1/les20_dz1.iml" filepath="$PROJECT_DIR$/Homework/Les020_HW/les20_dz1/les20_dz1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Homework/Les020_HW/les20_dz2/les20_dz2.iml" filepath="$PROJECT_DIR$/Homework/Les020_HW/les20_dz2/les20_dz2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Homework/Les022_HW/les22_dz1/les22_dz1.iml" filepath="$PROJECT_DIR$/Homework/Les022_HW/les22_dz1/les22_dz1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Homework/Les022_HW/les22_dz2/les22_dz2.iml" filepath="$PROJECT_DIR$/Homework/Les022_HW/les22_dz2/les22_dz2.iml" />
     </modules>
   </component>
 </project>
