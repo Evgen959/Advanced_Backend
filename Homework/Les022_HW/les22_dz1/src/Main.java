@@ -11,23 +11,27 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
-        List<Person> prsons = new ArrayList<>();
-        prsons.add(new Person("Johon", 32));
-        prsons.add(new Person("Anna", 25));
-        prsons.add(new Person("Jeck", 18));
-        prsons.add(new Person("Max", 20));
-        prsons.add(new Person("Johon", 32));
-        prsons.add(new Person("Johon", 32));
-        prsons.add(new Person("Katrin", 16));
-        prsons.add(new Person("Egor", 30));
-        prsons.add(new Person("Ivan", 43));
-        prsons.add(new Person("Olga", 28));
+        List<Person> people = new ArrayList<>();
+        people.add(new Person("Johon", 32));
+        people.add(new Person("Anna", 25));
+        people.add(new Person("Jeck", 18));
+        people.add(new Person("Max", 20));
+        people.add(new Person("Johon", 32));
+        people.add(new Person("Johon", 32));
+        people.add(new Person("Katrin", 16));
+        people.add(new Person("Egor", 30));
+        people.add(new Person("Ivan", 43));
+        people.add(new Person("Olga", 28));
 
-        ListPerson.print(prsons);
+        PersonUtil.print(people);
         System.out.println("-------- Older 20 ---------");
-        System.out.println(ListPerson.personOlder(prsons, 20));
+        System.out.println(PersonUtil.personOlder(people, 20));
 
         System.out.println("------- Qantity Person -------");
-        System.out.println(ListPerson.qantityPerson(prsons, "Anna"));
+        Person lookingPerson1 = new Person("Johon", 32);
+        Person lookingPerson2 = new Person("Egor", 30);
+
+        System.out.println(lookingPerson1 + " " + PersonUtil.qantityPerson(lookingPerson1, people));
+        System.out.println(lookingPerson2 + " " + PersonUtil.qantityPerson(lookingPerson2, people));
     }
 }
