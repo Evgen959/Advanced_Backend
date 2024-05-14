@@ -1,11 +1,10 @@
-public class Plant {
+public abstract class Plant {
     private int id;
     private static int counter =100;
     private String name;
-    private int height;
+    //private int height;
 
-    public Plant(String name, int height) {
-        this.height = height;
+    public Plant(String name) {
         this.name = name;
         counter ++;
         this.id = counter;
@@ -15,15 +14,19 @@ public class Plant {
     public String toString() {
         return  "id=" + id +
                 ", name:" + name + ", " +
-                "height:" + height;
+                "height:" + getHeight();
     }
 
+    public abstract int getHeight();
+
+    public abstract int getMaxHeightInSpring();
+
     private int heightPlantSpring (int height){
-        height = (int)(Math.random()*(height+maxHeightInSpring-height+1) + height);
+        height = (int)(Math.random()*(getHeight()+getMaxHeightInSpring()-getHeight()+1) + getHeight());
         return height;
     }
 
-    private int heightPlantSummer (int height){
+   /* private int heightPlantSummer (int height){
         height = (int)(Math.random()*(height+maxHeightInSummer-height+1) + height);
         return height;
     }
@@ -36,5 +39,35 @@ public class Plant {
     private int heightPlantWinter (int height){
         height = (int)(Math.random()*(height+maxHeightInWinter-height+1) + height);
         return height;
-    }
+    }*/
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

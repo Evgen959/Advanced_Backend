@@ -1,16 +1,16 @@
 public class Flower extends Plant {
-    private int height;
+    private int height = 0;
     private int maxHeightInSpring = 7;
     private int maxHeightInSummer = 10;
     private int maxHeightInAutumn = 0;
     private int maxHeightInWinter = 0;
 
     public Flower(String name, int height) {
-        super(name, height);
-        //this.height = heightPlantSpring(height);
+        super(name);
+        this.height = heightPlantSpring(height);
     }
 
-    /*@Override
+    @Override
     public String toString() {
         return "\n" + super.toString() + ", " +
                 "height=" + height;
@@ -34,5 +34,5 @@ public class Flower extends Plant {
     private int heightPlantWinter (int height){
         height = (int)(Math.random()*(height+maxHeightInWinter-height+1) + height);
         return height;
-    }*/
+    }
 }
