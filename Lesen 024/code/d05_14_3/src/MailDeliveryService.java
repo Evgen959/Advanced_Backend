@@ -1,2 +1,5 @@
-package PACKAGE_NAME;public interface MailDeliveryService {
+public interface MailDeliveryService {
+    void deliveryMail();
+
+    String getServiceName();
 }

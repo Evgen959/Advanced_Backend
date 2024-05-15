@@ -1,2 +1,3 @@
-package PACKAGE_NAME;public interface Programmer {
+public interface Programmer {
+    void writeCode();
 }

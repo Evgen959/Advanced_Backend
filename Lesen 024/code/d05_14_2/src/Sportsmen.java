@@ -1,2 +1,3 @@
-package PACKAGE_NAME;public interface Sportsmen {
+public interface Sportsmen {
+    public void sport();
 }

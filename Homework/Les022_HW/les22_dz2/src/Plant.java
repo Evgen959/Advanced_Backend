@@ -2,10 +2,11 @@ public abstract class Plant {
     private int id;
     private static int counter =100;
     private String name;
-    //private int height;
+    private int height;
 
-    public Plant(String name) {
+    public Plant(String name, int height) {
         this.name = name;
+        this.height= heightPlantSpring(getHeightStart());
         counter ++;
         this.id = counter;
     }
@@ -14,15 +15,15 @@ public abstract class Plant {
     public String toString() {
         return  "id=" + id +
                 ", name:" + name + ", " +
-                "height:" + getHeight();
+                "height:" + height;
     }
 
-    public abstract int getHeight();
+    public abstract int getHeightStart();
 
     public abstract int getMaxHeightInSpring();
 
-    private int heightPlantSpring (int height){
-        height = (int)(Math.random()*(getHeight()+getMaxHeightInSpring()-getHeight()+1) + getHeight());
+    private int heightPlantSpring (int heightStart){
+        height = (int)(Math.random()*(getHeightStart()+getMaxHeightInSpring()- getHeightStart()+1) + getHeightStart());
         return height;
     }
 
