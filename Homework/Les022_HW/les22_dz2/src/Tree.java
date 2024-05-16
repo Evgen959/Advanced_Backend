@@ -7,6 +7,7 @@ public class Tree extends Plant {
 
     public Tree(String name, int height) {
         super(name, height);
+        heightPlantSpring(getHeightStart());
         //this.height = height;
     }
 

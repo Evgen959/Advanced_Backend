@@ -6,7 +6,7 @@ public abstract class Plant {
 
     public Plant(String name, int height) {
         this.name = name;
-        this.height= heightPlantSpring(getHeightStart());
+        this.height= height;
         counter ++;
         this.id = counter;
     }
@@ -22,7 +22,9 @@ public abstract class Plant {
 
     public abstract int getMaxHeightInSpring();
 
-    private int heightPlantSpring (int heightStart){
+
+    public int heightPlantSpring (int heightStart){
+        int g = getHeightStart();
         height = (int)(Math.random()*(getHeightStart()+getMaxHeightInSpring()- getHeightStart()+1) + getHeightStart());
         return height;
     }
