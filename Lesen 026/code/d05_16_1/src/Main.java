@@ -48,7 +48,6 @@ public class Main {
         System.out.println("----------- comparator by Titlt Length --------------");
         Collections.sort(books, new CompoaratorBookByTitltLength());
         printBook(books);
-
     }
     public static  void printBook(List<Book> list){
         for (Book b : list) {
@@ -66,7 +65,5 @@ public class Main {
         Integer temp = list.get(index1); // содержимое в ячейкн с индексом 1 ложем в темп
         list.set(index1, list.get(index2)); // с ячейки с идексом 2 ложем в ячейку с индексом 1
         list.set(index2, temp);// с темп в ячейку в индексом 2
-
-
     }
 }
