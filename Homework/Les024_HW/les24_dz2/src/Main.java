@@ -19,13 +19,14 @@ public class Main {
 
         List<Person> people = new ArrayList<>();
         people.add(new Person("Jeck", "Johnson", 23, "jak@mail.com"));
-        people.add(new Person("Jimm", "lorenson", 35, "jimm@mail.com"));
+        people.add(new Person("Jimm", "Lorenson", 35, "jimm@mail.com"));
 
         PersonUtil.print(people);
         PersonToStringFunction a1 = new GetName();
         System.out.println(handlerPersons(people, a1));
         System.out.println(handlerPersons(people, new GetEmail()));
-
+        System.out.println("-----------------------");
+        PersonUtil.printString(handlerPersons(people, new GetStringNameEmail()));
 
     }
 
@@ -34,12 +35,6 @@ public class Main {
         for (Person p : people){
             result.add(function.apply(p));
         }
-
-
         return result;
     }
-
-
-
-
 }
