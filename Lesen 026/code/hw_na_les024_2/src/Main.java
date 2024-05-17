@@ -9,37 +9,35 @@
 в который в качестве параметра должен приходить список Person и реализация необходимого способа обработки.
 */
 
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
-
     public static void main(String[] args) {
+        List<Person> list = List.of(
+                new Person("Ivan", "Ivanov", 19, "ivan@mail.com"),
+                new Person("Sergey", "sergeev", 23, "sergey@mail.com"),
+                new Person("Nikolay", "Nikolav", 21, "nikolay@mail.com"),
+                new Person("Boris", "Borisov", 28, "boris@mail.com")
+        );
 
-        List<Person> people = new ArrayList<>();
-        people.add(new Person("Jeck", "Johnson", 23, "jak@mail.com"));
-        people.add(new Person("Jimm", "lorenson", 35, "jimm@mail.com"));
+        System.out.println(list);
+        System.out.println(personListHandler(list, new GetNameFunction()));
+        System.out.println(personListHandler(list, new GetEmailFunction()));
 
-        PersonUtil.print(people);
-        PersonToStringFunction a1 = new GetName();
-        System.out.println(handlerPersons(people, a1));
-        System.out.println(handlerPersons(people, new GetEmail()));
+        // перемменная типа interface = объект типа вывода строки new ClassImplementation
+        ToStringFunction func = new GetHameEmailStringFunction();
+        System.out.println(personListHandler(list, func));
 
 
     }
 
-    public static List<String> handlerPersons (List<Person> people, PersonToStringFunction function){
+    public static List<String> personListHandler(List<Person> list, ToStringFunction func){
         List<String> result = new ArrayList<>();
-        for (Person p : people){
-            result.add(function.apply(p));
+        for (Person p : list){
+            String res = func.apply(p);
+            result.add(res);
         }
-
-
         return result;
     }
-
-
-
-
 }

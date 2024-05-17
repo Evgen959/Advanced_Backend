@@ -1,17 +1,17 @@
 import java.util.Random;
 
 public abstract class Plant {
-    private static int counter = 0;
+    private static int counter=0;
     private int id;
     private String title;
-    private int height = 0;
-    private int season = 0;
+    private int height=0;
+    private  int season=0;
     private Random random = new Random();
 
     public Plant(String title, int height) {
-        id = ++ counter;
-        this.title = title; // береться из класса Дерево
-        this.height = height; // береться из класса Дерево
+        id=++counter;
+        this.title = title;
+        this.height = height;
     }
 
     public int getSeason() {
@@ -19,17 +19,17 @@ public abstract class Plant {
     }
 
     public void changeSeason(){
-        if (season < 3){
-            season ++;
+        if(season<3){
+            season++;
         } else {
-            season = 0;
+            season=0;
         }
         grow();
     }
 
-    public String getSeasonTitle(){
-        switch (season){
-            case 0: return "spring";
+    public  String getSeasonTitle(){
+        switch (season) {
+            case 0: return  "spring";
             case 1: return "summer";
             case 2: return "autumn";
             case 3: return "winter";
@@ -50,7 +50,7 @@ public abstract class Plant {
 
     public void grow(){
         height+= getRndGrowBySeason();
-        if (height>getMaxHeight()){
+        if(height>getMaxHeight()) {
             height = getMaxHeight();
         }
     }
@@ -61,6 +61,7 @@ public abstract class Plant {
 
     @Override
     public String toString() {
-        return "Plant " + id + " " + title + "(" + height + ")" + "     " + getSeasonTitle();
+        return "Plant " + id + " " + title + " ("+ height+")" + "    " + getSeasonTitle();
+
     }
 }

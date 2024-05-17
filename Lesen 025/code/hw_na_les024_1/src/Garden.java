@@ -4,6 +4,7 @@ import java.util.List;
 public class Garden {
     private static List<Plant> plants = new ArrayList<>();
 
+
     public static void changeSeason() {
         for (Plant p: plants){
             p.changeSeason();
@@ -14,11 +15,10 @@ public class Garden {
         plants.add(plant);
     }
 
-    @Override
     public String toString(){
-        return /*Plant.getSeasonTitle() +"\n"+ */ plants.toString();
-    }
 
+        return /*Plant.getSeasonTitle() +"\n" +*/ plants.toString();
+    }
 
 
 }

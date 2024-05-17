@@ -13,10 +13,7 @@ public class Person {
 
     @Override
     public String toString() {
-        return  firstName + " " +
-                lastName + " (" +
-                age + ") " +
-                "email: " + email;
+        return firstName + " " + lastName + " (" + age + ")" + " email: " + email;
     }
 
     public String getFirstName() {
