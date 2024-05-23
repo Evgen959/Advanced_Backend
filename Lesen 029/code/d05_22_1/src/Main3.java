@@ -27,7 +27,7 @@ public class Main3 {
         StringBuilder result = new StringBuilder(); // создаем StringBuilder
                                                     // (для однопоточной среды)
         //StringBuffer result new StringBuffer();   // такойже как StringBuilder
-                                                    // только для многопоточной среды
+                                                    // для многопоточной среды
         for (String str :list){                     // собираем "строку" используя StringBuilder
             result.append(str).append("|").append(1244467);
         }
