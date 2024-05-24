@@ -16,46 +16,34 @@
         естественно, используя StringBuilder
 */
 
-
 public class Main {
     public static void main(String[] args) {
 
-        String str1 = "Ivan Ivanov;Oleg Petrov;Anna Kovaleva";
-        System.out.println(str1);
-
-        System.out.println(stringInitials(stringSplit1(str1)));
-        System.out.println("----------");
-        System.out.println(stringSplit2(stringSplit1(str1)));
-
-
-
-
+        System.out.println("Hello world!");
     }
 
-    public static String stringInitials(String[] str){
+    public static String stringHandler(String str){
+        String[] nameArray = str.split(";");
+        for (int i = 0; i < nameArray.length; i++) {
+            nameArray[i] = toShortFio(nameArray[i]);
+        }
+
+        return join(nameArray);
+    }
+
+    public static String toShortFio(String str){
+        String[] namesArray = str.split(" ");
+
+        return "" + namesArray[0].charAt(0) + "." + namesArray[1];
+    }
+
+    public static String join(String[] array){
         StringBuilder result = new StringBuilder();
-        for (String s : str) {
-            result.append(s).append(";");
+
+        for (int i = 0; i < array.length; i++) {
+            result.append(array[i]).append(";");
         }
+        result.setLength(result.length()-1);
         return result.toString();
-    }
-
-    public static String[] stringSplit1(String str){
-        String[] str1 = str.split(";");
-        String[] str2 = str1;
-
-        return str2;
-    }
-
-    public static String[] stringSplit2(String[] str){
-        String[] strings = {};
-        for (String s : str) {
-            strings = s.split(" ");
-            for (int i = 0; i < str1.length; i++) {
-                str1[0] = String.valueOf(str1[0].charAt(0));
-            }
-
-        }
-        return strings;
     }
 }
