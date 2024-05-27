@@ -28,7 +28,8 @@ public class Main {
     public static List<Employee> selectEmployeeForBonus(List<Employee> list, int N){
         List<Employee> result = new ArrayList<>();
         List<Employee> sortList = sort(list, new ComparatorEmployeeByYear());
-        for (int i = 0; i < Math.min(N, sortList.size()); i++) {
+        int quntity = quntityEmploeerepid(list, new ComparatorEmployeeByYear(), N);
+        for (int i = 0; i < Math.min(quntity, sortList.size()); i++) {
             result.add(sortList.get(i));
         }
         return result;
@@ -40,14 +41,14 @@ public class Main {
         return sortedEmployees;
     }
 
-   /* private static Integer quntityEmploeerepid  (List<Employee> list, Comparator<Employee> comparator, int N){
+    public static Integer quntityEmploeerepid  (List<Employee> list, Comparator<Employee> comparator, int N){
+        System.out.println("test");
         int quantity = 0;
-
         for (int i = 0; i < list.size(); i++) {
             if (comparator == null){
                 quantity ++;
             }
         }
         return quantity;
-    }*/
+    }
 }

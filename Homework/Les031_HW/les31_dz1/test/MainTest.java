@@ -25,12 +25,12 @@ class MainTest {
         expectedResult.add(new Employee("Jack", 1999));
         expectedResult.add(new Employee("Oleg", 2000));
 
-        List<Employee> actualList = Main.selectEmployeeForBonus(data, 3);
+        List<Employee> actualResult = Main.selectEmployeeForBonus(data, 3);
 
-        Assertions.assertEquals(expectedResult, actualList);
+        Assertions.assertEquals(expectedResult, actualResult);
     }
 
-   /* @Test
+    @Test
     @DisplayName("selectEmployeeForBonus_if_EmployeeForBonus>N")
     void selectEmployeeForBonus1() {
         List<Employee> data = new ArrayList<>();
@@ -46,12 +46,12 @@ class MainTest {
         expectedResult.add(new Employee("Mark", 1995));
         expectedResult.add(new Employee("Oleg", 1995));
 
-        List<Employee> actualList = Main.selectEmployeeForBonus(data, 2);
+        List<Employee> actualResult = Main.selectEmployeeForBonus(data, 2);
 
-        Assertions.assertEquals(expectedResult, actualList);
-    }*/
+        Assertions.assertEquals(expectedResult, actualResult);
+    }
 
-    /*@Test
+    @Test
     @DisplayName("quntityEmploeerepid")
     void quntityEmploeerepid(){
         List<Employee> data = new ArrayList<>();
@@ -61,6 +61,14 @@ class MainTest {
         data.add(new Employee("Mark", 1995));
         data.add(new Employee("Oleg", 1995));
         data.add(new Employee("Valerii", 2005));
-    }*/
+
+        int expectedResult = 3;
+
+        int actualResult = Main.quntityEmploeerepid(data, new ComparatorEmployeeByYear(), 2);
+
+        Assertions.assertEquals(expectedResult, actualResult);
+    }
+
+
 
 }
