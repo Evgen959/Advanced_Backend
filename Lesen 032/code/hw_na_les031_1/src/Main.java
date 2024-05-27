@@ -27,28 +27,27 @@ public class Main {
 
     public static List<Employee> selectEmployeeForBonus(List<Employee> list, int N){
         List<Employee> result = new ArrayList<>();
-        List<Employee> sortList = sort(list, new ComparatorEmployeeByYear());
-        int quntity = quntityEmploeerepid(list, new ComparatorEmployeeByYear(), N);
-        for (int i = 0; i < Math.min(quntity, sortList.size()); i++) {
-            result.add(sortList.get(i));
+        List<Employee> sortedList = createSortedCopy(list,new ComparatorEmployeeByYear());
+        int i=0;
+        int year = 0;
+        for (i = 0; i < Math.min(N,sortedList.size()); i++) {
+            Employee emp = sortedList.get(i);
+            result.add(emp);
+            year = emp.getYear(); // год в последней ячейки нового листа
+        }
+        for ( ;i< sortedList.size();i++){
+            Employee employee = sortedList.get(i);
+            if (employee.getYear() == year){ //сравниваем гот с последним добавленным в новый лист
+                result.add(employee);
+            } else {
+                break;
+            }
         }
         return result;
     }
-
-    public static List<Employee> sort(List<Employee> list, Comparator<Employee> comparator){
-        ArrayList<Employee> sortedEmployees = new ArrayList<>(list);
-        Collections.sort(sortedEmployees, comparator);
-        return sortedEmployees;
-    }
-
-    public static Integer quntityEmploeerepid  (List<Employee> list, Comparator<Employee> comparator, int N){
-        System.out.println("test");
-        int quantity = 0;
-        for (int i = 0; i < list.size(); i++) {
-            if (comparator.compare() == null){
-                quantity ++;
-            }
-        }
-        return quantity;
+    public static List<Employee> createSortedCopy(List<Employee> list, Comparator<Employee> comparator){
+        ArrayList<Employee> result = new ArrayList<>(list);  // result - копия листа list
+        Collections.sort(result,comparator);                 // сортируем result
+        return result;
     }
 }
