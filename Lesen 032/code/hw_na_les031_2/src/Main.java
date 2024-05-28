@@ -11,6 +11,7 @@
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class Main {
@@ -24,10 +25,10 @@ public class Main {
         studentList.add(new Student("Ivan", 6, 9, 10, 2, 8, 7));
         studentList.add(new Student("Olga", 6, 9, 8, 2, 4, 3, 7, 10, 10));
 
-        Collections.sort(studentList, new ComparatorStudentByShortfall());
-        System.out.println(studentList);
-        System.out.println("-----------------");
-        System.out.println(studentToString(studentList));
+        //Collections.sort(studentList, new ComparatorStudentByShortfall());
+        //System.out.println(studentList);
+        //System.out.println("-----------------");
+        //System.out.println(studentToString(studentList));
 
         /*Student student1 = new Student("Jack");
         student1.addGrade(8);
@@ -39,11 +40,18 @@ public class Main {
     }
 
     public static String studentToString(List<Student> studentList){
+        List<Student> sortedList =  createSortedCopy(studentList, new ComparatorStudentByShortfall());
         StringBuilder sb = new StringBuilder();
-        for (Student s: studentList){
+        for (Student s: sortedList){
             sb.append(s.getName()).append("-").append(s.getShortfall()).append(";");
         }
-        sb.setLength(sb.length()-1);
+        sb.setLength(sb.length()-1); // обрезаем строку на один символ (;) в конце
         return sb.toString();
+    }
+
+    public  static List<Student> createSortedCopy(List<Student> list, Comparator<Student> comparator){
+        ArrayList<Student> result = new ArrayList<>(list);
+        Collections.sort(result, comparator);
+        return result;
     }
 }

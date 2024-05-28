@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class Student {
     private static final int MAX_QUANTITY_GRADES = 10;
@@ -55,5 +56,18 @@ public class Student {
 
     public int getSumOfGrades() {
         return sumOfGrades;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Student student = (Student) o;
+        return sumOfGrades == student.sumOfGrades && Objects.equals(name, student.name) && Objects.equals(grades, student.grades);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, grades, sumOfGrades);
     }
 }
