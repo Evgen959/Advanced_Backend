@@ -41,6 +41,10 @@ public class Main {
 
     public static String studentToString(List<Student> studentList){
         List<Student> sortedList =  createSortedCopy(studentList, new ComparatorStudentByShortfall());
+        return listToString(sortedList);
+    }
+
+    private static String listToString(List<Student> sortedList) {
         StringBuilder sb = new StringBuilder();
         for (Student s: sortedList){
             sb.append(s.getName()).append("-").append(s.getShortfall()).append(";");

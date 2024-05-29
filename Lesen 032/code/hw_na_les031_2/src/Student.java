@@ -25,16 +25,26 @@ public class Student {
             sumOfGrades = sumOfGrades + grade;
         }
     }
+    // 1 test добавляется ли в лист значение
+    // 2 test при добавлении одного значения меняется коректно сумма
+    // 3 test добавляются ли последующие значения оценок
+    // 4 test коректно ли сумма при добавлении значений оценок
+    // 5 test не добавляются не коректные оценки (<0 > 10 )
+    // 6 test больше 10 оценок нельзя добавить
 
     public void addGrade(int ...grade){
         for (int i = 0; i < grade.length; i++) {
             addGrade(grade[i]);
         }
     }
+    // 1 test список коректдно добавляется
+    // 2 test
 
     public Integer getShortfall(){
         return MAX_QUANTITY_GRADES * MAX_GRADE - sumOfGrades;
     }
+
+
 
     @Override
     public String toString() {
