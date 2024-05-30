@@ -9,7 +9,7 @@ class MyLikedListTest {
 
     @Test
     void add() {
-        MyList list = new MyLikedList();
+        MyList<String> list = new MyLikedList<>();
         list.add("Jack");
         list.add("John");
         list.add("Nick");
@@ -21,9 +21,22 @@ class MyLikedListTest {
     }
 
     @Test
+    void addInteger() {
+        MyList<Integer> list = new MyLikedList<>();
+        list.add(1);
+        list.add(3);
+        list.add(5);
+
+        Assertions.assertEquals(3, list.size());
+        Assertions.assertEquals(1, list.get(0));
+        Assertions.assertEquals(3, list.get(1));
+        Assertions.assertEquals(5, list.get(2));
+    }
+
+    @Test
     @DisplayName("add after removing")
     void add1() {
-        MyList list = new MyLikedList();
+        MyList<String> list = new MyLikedList<>();;
         list.add("Jack");
         list.add("John");
         list.add("Nick");
@@ -38,7 +51,7 @@ class MyLikedListTest {
 
     @Test
     void get() {
-        MyList list = new MyLikedList();
+        MyList<String> list = new MyLikedList<>();
         list.add("Jack");
         list.add("John");
         list.add("Nick");
@@ -48,7 +61,7 @@ class MyLikedListTest {
 
     @Test
     void size() {
-        MyList list = new MyLikedList();
+        MyList<String> list = new MyLikedList<>();
         list.add("Jack");
         list.add("John");
         list.add("Nick");
@@ -58,14 +71,14 @@ class MyLikedListTest {
     @Test
     @DisplayName("size should be 0 if list is empty")
     void size1() {
-        MyList list = new MyLikedList();
+        MyList<String> list = new MyLikedList<>();
         Assertions.assertEquals(0, list.size());
     }
 
     @Test
     @DisplayName("regular remove")
     void remove() {
-        MyList list = new MyLikedList();
+        MyList<String> list = new MyLikedList<>();
         list.add("Jack");
         list.add("John");
         list.add("Nick");
@@ -79,7 +92,7 @@ class MyLikedListTest {
     @Test
     @DisplayName("regular tail remove")
     void remove1() {
-        MyList list = new MyLikedList();
+        MyList<String> list = new MyLikedList<>();;
         list.add("Jack");
         list.add("John");
         list.add("Nick");
@@ -93,7 +106,7 @@ class MyLikedListTest {
     @Test
     @DisplayName("remove head remove")
     void remove2() {
-        MyList list = new MyLikedList();
+        MyList<String> list = new MyLikedList<>();
         list.add("Jack");
         list.add("John");
         list.add("Nick");
@@ -107,7 +120,7 @@ class MyLikedListTest {
     @Test
     @DisplayName("remove() last remove")
     void remove3() {
-        MyList list = new MyLikedList();
+        MyList<String> list = new MyLikedList<>();
         list.add("Jack");
         list.add("John");
         list.add("Nick");
@@ -125,7 +138,7 @@ class MyLikedListTest {
     @Test
     @DisplayName("remove() last remove from single element list")
     void remove4() {
-        MyList list = new MyLikedList();
+        MyList<String> list = new MyLikedList<>();
         list.add("Jack");
         String removedString = list.remove();
 

@@ -2,7 +2,6 @@ public class MyLikedList implements MyList{
     private Node head = null;
     private Node tail = null;
 
-    private Node temp = null;
 
     private int size = 0;
 
@@ -17,6 +16,23 @@ public class MyLikedList implements MyList{
             head = node;
         }
         tail = node;
+        return true;
+    }
+
+    @Override
+    public boolean add(String element, int index) {
+        if (index>=size || head==null){
+            return false;
+        }
+        int counter = 0;
+        Node aktiveNode = head;
+        while (aktiveNode.getNext()!=null && counter<index){
+            aktiveNode = aktiveNode.getNext();
+            counter++;
+        }
+        if (counter == index){
+
+        }
         return true;
     }
 
@@ -46,7 +62,7 @@ public class MyLikedList implements MyList{
 
     @Override
     public String remove() {
-        temp = tail;
+        Node temp = tail;
         tail.getPrev().setNext(null);
         tail.setPrev(tail.getPrev());
         size --;

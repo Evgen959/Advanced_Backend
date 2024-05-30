@@ -35,6 +35,23 @@ class MyLikedListTest {
         Assertions.assertEquals("John", list.get(1));
         Assertions.assertEquals("Ann", list.get(2));
     }
+    @Test
+    @DisplayName("add element for index")
+    void add2() {
+        MyList list = new MyLikedList();
+        list.add("Jack");
+        list.add("John");
+        list.add("Nick");
+
+        MyList expectedResult = new MyLikedList();
+        list.add("Jack");
+        list.add("John");
+        list.add("Ann");
+        list.add("Nick");
+
+
+        Assertions.assertEquals(expectedResult, list.add("Ann", 2));
+    }
 
     @Test
     void get() {
@@ -128,6 +145,7 @@ class MyLikedListTest {
         list.add("Nick");
 
         Assertions.assertEquals(list.get(2), list.remove());
+        System.out.println(list);
 
     }
 

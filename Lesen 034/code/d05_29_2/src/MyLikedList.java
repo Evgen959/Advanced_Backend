@@ -1,13 +1,13 @@
-public class MyLikedList implements MyList{
-    private Node head = null;
-    private Node tail = null;
+public class MyLikedList<E> implements MyList<E>{
+    private Node<E> head = null;
+    private Node<E> tail = null;
     private int size = 0;
 
 
 
     @Override
-    public boolean add(String element) {
-        Node node = new Node(tail, null, element);
+    public boolean add(E element) {
+        Node<E> node = new Node<>(tail, null, element);
         size++;
         if (tail!=null){
             tail.setNext(node);
@@ -20,23 +20,23 @@ public class MyLikedList implements MyList{
     }
 
     @Override
-    public boolean add(int index, String element) {
+    public boolean add(int index, E element) {
 
         return false;
     }
 
     @Override
-    public String get(int index) {
-        Node node = getNode(index);
+    public E get(int index) {
+        Node<E> node = getNode(index);
         return (node!=null)?node.getValue():null;
     }
 
-    private Node getNode(int index){
+    private Node<E> getNode(int index){
         if (index>=size || index<0 || head==null){
             return null;
         }
         int counter = 0;
-        Node aktiveNode = head;
+        Node<E> aktiveNode = head;
         while (aktiveNode!=null && counter<index){
             aktiveNode = aktiveNode.getNext();
             counter++;
@@ -49,12 +49,12 @@ public class MyLikedList implements MyList{
         return size;
     }
 
-    private String remove(Node node){// удоляем ноду
+    private E remove(Node<E> node){// удоляем ноду
         if (node==null){
             return null;
         }
-        Node prev = node.getPrev();
-        Node next = node.getNext();
+        Node<E> prev = node.getPrev();
+        Node<E> next = node.getNext();
 
         if (prev!=null){
             prev.setNext(next);
@@ -69,39 +69,23 @@ public class MyLikedList implements MyList{
         size--;
         node.setPrev(null);
         node.setNext(null);
-        String removedValue = node.getValue();
+        E removedValue = node.getValue();
         return removedValue;
     }
 
     @Override
-    public String remove(int index) {
-        Node node = getNode(index); // ищит ноду
+    public E remove(int index) {
+        Node<E> node = getNode(index); // ищит ноду
         return remove(node);
     }
 
     @Override
-    public String remove() {
+    public E remove() {
         return remove(tail);
-       /* if (tail!=null){ // список не пустой
-            Node prev = tail.getPrev();
-            String removedValue = tail.getValue();
-            if (prev==null){ // когда список из одного элемента
-                head = null;
-                tail = null;
-            } else {
-                prev.setNext(tail.getNext());
-                tail.setPrev(null);
-                tail = prev;
-            }
-            size --;
-            return removedValue;
-        } else { // список пустой
-            return null;
-        }*/
     }
 
     @Override
-    public String set(int index, String element) {
+    public E set(int index, E element) {
         return null;
     }
 
@@ -111,7 +95,7 @@ public class MyLikedList implements MyList{
             return "[]";
         }
         StringBuilder sb = new StringBuilder();
-        Node currenNode = head;
+        Node<E> currenNode = head;
         while (currenNode!=null){
             sb.append(currenNode.getValue()).append(";");
             currenNode=currenNode.getNext();
