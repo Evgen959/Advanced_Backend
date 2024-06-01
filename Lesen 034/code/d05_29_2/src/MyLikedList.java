@@ -1,9 +1,8 @@
 public class MyLikedList<E> implements MyList<E>{
+
     private Node<E> head = null;
     private Node<E> tail = null;
     private int size = 0;
-
-
 
     @Override
     public boolean add(E element) {
@@ -19,9 +18,30 @@ public class MyLikedList<E> implements MyList<E>{
         return true;
     }
 
+    public boolean isEmpty(){
+        return  head==null;
+    }
+
+    //  0....size-1
     @Override
     public boolean add(int index, E element) {
-
+        if (index>=size){
+            return add(element);
+        }
+        Node<E> node = new Node<>(null,null,element);
+        Node<E> next = getNode(index);
+        if(next == null||index<=0){ //добавляем ноду в 0 индекс
+            next=head;
+            head=node;
+        }
+        Node<E> prev = next.getPrev();
+        next.setPrev(node);
+        node.setNext(next);
+        node.setPrev(prev);
+        if (prev!=null){
+            prev.setNext(node);
+        }
+        size++;
         return false;
     }
 

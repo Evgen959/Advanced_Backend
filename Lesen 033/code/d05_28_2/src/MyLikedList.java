@@ -3,8 +3,6 @@ public class MyLikedList implements MyList{
     private Node tail = null;
     private int size = 0;
 
-
-
     @Override
     public boolean add(String element) {
         Node node = new Node(tail, null, element);

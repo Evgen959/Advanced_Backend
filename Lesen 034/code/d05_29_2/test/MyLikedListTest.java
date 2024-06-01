@@ -1,9 +1,6 @@
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Assumptions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class MyLikedListTest {
 
@@ -21,6 +18,83 @@ class MyLikedListTest {
     }
 
     @Test
+    @DisplayName("add(index, element): add element at the middle of list")
+    void addAtTheMiddleOfList() {
+        MyList<String> list = new MyLikedList<>();
+        list.add("Jack");
+        list.add("John");
+        list.add("Nick");
+        list.add(2,"Poul");
+
+        Assertions.assertEquals(4, list.size());
+        Assertions.assertEquals("Jack", list.get(0));
+        Assertions.assertEquals("John", list.get(1));
+        Assertions.assertEquals("Poul", list.get(2));
+        Assertions.assertEquals("Nick", list.get(3));
+    }
+
+    @Test
+    @DisplayName("add(index, element): element at the 0 position")
+    void addAtTheMiddleOfList1() {
+        MyList<String> list = new MyLikedList<>();
+        list.add("Jack");
+        list.add("John");
+        list.add("Nick");
+        list.add(0,"Poul");
+
+        Assertions.assertEquals(4, list.size());
+        Assertions.assertEquals("Poul", list.get(0));
+        Assertions.assertEquals("Jack", list.get(1));
+        Assertions.assertEquals("John", list.get(2));
+        Assertions.assertEquals("Nick", list.get(3));
+    }
+
+    @Test
+    @DisplayName("add(index, element): element at the 0 position")
+    void addAtTheMiddleOfList2() {
+        MyList<String> list = new MyLikedList<>();
+        list.add("Jack");
+        list.add("John");
+        list.add("Nick");
+        list.add(3,"Poul");
+
+        Assertions.assertEquals(4, list.size());
+        Assertions.assertEquals("Jack", list.get(0));
+        Assertions.assertEquals("John", list.get(1));
+        Assertions.assertEquals("Nick", list.get(2));
+        Assertions.assertEquals("Poul", list.get(3));
+    }
+
+
+
+    @Test
+    @DisplayName("Add element by index at the 0 position")
+    void addAtTheMiddleOfList3() {
+        MyList<String> list = new MyLikedList<>();
+        list.add(3,"Poul");
+
+        Assertions.assertEquals(1, list.size());
+        Assertions.assertEquals("Poul", list.get(0));
+    }
+
+    @Test
+    @DisplayName("add(index, element): several elements")
+    void addAtTheMiddleOfList4() {
+        MyList<String> list = new MyLikedList<>();
+        list.add(0,"Jack");
+        list.add(1, "John");
+        list.add(0,"Nick");
+        list.add(1,"Poul");
+
+        Assertions.assertEquals(4, list.size());
+        Assertions.assertEquals("Nick", list.get(0));
+        Assertions.assertEquals("Poul", list.get(1));
+        Assertions.assertEquals("Jack", list.get(2));
+        Assertions.assertEquals("John", list.get(3));
+    }
+
+    @Test
+    @DisplayName("add(element): integers list")
     void addInteger() {
         MyList<Integer> list = new MyLikedList<>();
         list.add(1);
@@ -34,7 +108,7 @@ class MyLikedListTest {
     }
 
     @Test
-    @DisplayName("add after removing")
+    @DisplayName("add(element): after removing")
     void add1() {
         MyList<String> list = new MyLikedList<>();;
         list.add("Jack");
