@@ -13,7 +13,8 @@ public class Main {
 
         Collections.sort(people, new ComparatorStringByAge());
 
-        Collections.sort(people, new Comparator<Person>() { //анонимный класс
+        Collections.sort(people, new Comparator<Person>() { // Comparator вложенный в Main
+                                                            // как анонимный класс
             @Override
             public int compare(Person o1, Person o2) {
                 return o1.getAge()-o2.getAge();
@@ -21,14 +22,10 @@ public class Main {
         });
         System.out.println(people);
 
-        Swimable swimable = new Swimable() { // анонимный класс
-
+        Swimable swimable = new Swimable() { // анонимный класс положили в переменную
             @Override
             public void swim() {
-
             }
         };
-
-
     }
 }
