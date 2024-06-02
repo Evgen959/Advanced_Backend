@@ -27,5 +27,6 @@ public class Main {
             }
         }
         MyDate myDate = new MyDate(10, 10, 2004);
+        MyDate myDate1 = new MyDate(10, 10, 2004);
     }
 }

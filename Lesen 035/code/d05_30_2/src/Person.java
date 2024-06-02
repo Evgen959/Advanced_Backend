@@ -1,16 +1,23 @@
+import java.util.Comparator;
+
 public class Person {
     private String name;
     private int age;
 
 
-
-    class Comparator implements Comparable<Person>{
+    private class ComparatorByAge implements Comparator<Person>{
 
         @Override
-        public int compareTo(Person o1, Person o2) {
+        public int compare(Person o1, Person o2) {
             return o1.age-o2.age;
         }
     }
+    public Comparator<Person> getComparator(){
+        return new ComparatorByAge();
+    }
 
-    public Comparable<Person> getComparator()
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
 }
