@@ -32,7 +32,6 @@ public class Main {
         qa.add(new Student("Josher", "Gimps"));
 
         System.out.println(listStudentsBackendFrontengQA(backend, frontend, qa));
-
     }
 
     public static List<Student> listStudentsBackendFrontengQA(List<Student> list1, List<Student> list2, List<Student> list3){
