@@ -41,6 +41,7 @@
       <module fileurl="file://$PROJECT_DIR$/Lesen 035/code/d05_30_3/d05_30_3.iml" filepath="$PROJECT_DIR$/Lesen 035/code/d05_30_3/d05_30_3.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesen 036/code/d05_31_1/d05_31_1.iml" filepath="$PROJECT_DIR$/Lesen 036/code/d05_31_1/d05_31_1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesen 036/code/d05_31_2/d05_31_2.iml" filepath="$PROJECT_DIR$/Lesen 036/code/d05_31_2/d05_31_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesen 038/code/d06_04_1/d06_04_1.iml" filepath="$PROJECT_DIR$/Lesen 038/code/d06_04_1/d06_04_1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesen 037/code/d06_3_1/d06_3_1.iml" filepath="$PROJECT_DIR$/Lesen 037/code/d06_3_1/d06_3_1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesen 037/code/d06_3_2/d06_3_2.iml" filepath="$PROJECT_DIR$/Lesen 037/code/d06_3_2/d06_3_2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesen 020/d20240507_2/d20240507_2.iml" filepath="$PROJECT_DIR$/Lesen 020/d20240507_2/d20240507_2.iml" />
@@ -66,6 +67,7 @@
       <module fileurl="file://$PROJECT_DIR$/Lesen 032/code/hw_na_les031_1/hw_na_les031_1.iml" filepath="$PROJECT_DIR$/Lesen 032/code/hw_na_les031_1/hw_na_les031_1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesen 032/code/hw_na_les031_2/hw_na_les031_2.iml" filepath="$PROJECT_DIR$/Lesen 032/code/hw_na_les031_2/hw_na_les031_2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesen 034/code/hw_na_les033_1/hw_na_les033_1.iml" filepath="$PROJECT_DIR$/Lesen 034/code/hw_na_les033_1/hw_na_les033_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesen 038/code/hw_na_les037_1/hw_na_les037_1.iml" filepath="$PROJECT_DIR$/Lesen 038/code/hw_na_les037_1/hw_na_les037_1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesen 021/code/hw_na_les20/hw_na_les20.iml" filepath="$PROJECT_DIR$/Lesen 021/code/hw_na_les20/hw_na_les20.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesen 022/code/hw_na_les21/hw_na_les21.iml" filepath="$PROJECT_DIR$/Lesen 022/code/hw_na_les21/hw_na_les21.iml" />
       <module fileurl="file://$PROJECT_DIR$/konsul/les020/les020.iml" filepath="$PROJECT_DIR$/konsul/les020/les020.iml" />
@@ -74,6 +76,7 @@
       <module fileurl="file://$PROJECT_DIR$/konsul/les030/les030.iml" filepath="$PROJECT_DIR$/konsul/les030/les030.iml" />
       <module fileurl="file://$PROJECT_DIR$/konsul/les033/les033.iml" filepath="$PROJECT_DIR$/konsul/les033/les033.iml" />
       <module fileurl="file://$PROJECT_DIR$/konsul/les035/les035.iml" filepath="$PROJECT_DIR$/konsul/les035/les035.iml" />
+      <module fileurl="file://$PROJECT_DIR$/konsul/les038/les038.iml" filepath="$PROJECT_DIR$/konsul/les038/les038.iml" />
       <module fileurl="file://$PROJECT_DIR$/Homework/Les020_HW/les20_dz1/les20_dz1.iml" filepath="$PROJECT_DIR$/Homework/Les020_HW/les20_dz1/les20_dz1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Homework/Les020_HW/les20_dz2/les20_dz2.iml" filepath="$PROJECT_DIR$/Homework/Les020_HW/les20_dz2/les20_dz2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Homework/Les022_HW/les22_dz1/les22_dz1.iml" filepath="$PROJECT_DIR$/Homework/Les022_HW/les22_dz1/les22_dz1.iml" />
@@ -91,6 +94,7 @@
       <module fileurl="file://$PROJECT_DIR$/Homework/Les031_HW/les31_dz2/les31_dz2.iml" filepath="$PROJECT_DIR$/Homework/Les031_HW/les31_dz2/les31_dz2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Homework/Les033_HW/les33_dz1/les33_dz1.iml" filepath="$PROJECT_DIR$/Homework/Les033_HW/les33_dz1/les33_dz1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Homework/Les034_HW/les34_dz1/les34_dz1.iml" filepath="$PROJECT_DIR$/Homework/Les034_HW/les34_dz1/les34_dz1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Homework/Les037_HW/les37_dz1/les37_dz1.iml" filepath="$PROJECT_DIR$/Homework/Les037_HW/les37_dz1/les37_dz1.iml" />
     </modules>
   </component>
 </project>
