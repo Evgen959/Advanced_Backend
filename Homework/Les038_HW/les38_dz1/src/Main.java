@@ -26,7 +26,7 @@ public class Main {
         List<Student> group03 = new ArrayList<>();
         group03.add(new Student("July", "Roberc"));
         group03.add(new Student("Vasiliy", "Vishnevskiy"));
-        group03.add(new Student("Nikl", "Nikolson"));
+        group03.add(new Student("Nikol", "Nikolson"));
         group03.add(new Student("Josher", "Gimps"));
 
         System.out.println("--------studentSet----------");
