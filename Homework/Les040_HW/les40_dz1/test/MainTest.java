@@ -19,17 +19,17 @@ class MainTest {
         map.put("Ann", 13);
 
         Map<String,Integer> expectedResult = new HashMap<>();
-        map.put("Jack", 6);
-        map.put("John", 20);
-        map.put("Olga", 3);
-        map.put("Ted", 8);
-        map.put("Nick", 12);
-        map.put("Ann", 13);
-        map.put("JackTed", 14);
+        expectedResult.put("Jack", 6);
+        expectedResult.put("John", 20);
+        expectedResult.put("Olga", 3);
+        expectedResult.put("Ted", 8);
+        expectedResult.put("Nick", 12);
+        expectedResult.put("Ann", 13);
+        expectedResult.put("JackTed", 14);
 
         Map<String, Integer> actualResult = Main.sumOfValues(map, "Jack", "Ted");
 
-        Assertions.assertEquals(map.containsKey(expectedResult), map.containsKey(actualResult));
+        Assertions.assertEquals(expectedResult, actualResult);
 
     }
 }

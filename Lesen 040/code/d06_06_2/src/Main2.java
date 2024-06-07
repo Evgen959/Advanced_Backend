@@ -20,7 +20,7 @@ public class Main2 {
         System.out.println(map);
 
 
-        Set<Integer> keySet = map.keySet();
+      /*  Set<Integer> keySet = map.keySet();
         for (Integer key: keySet){ // перебераем по ключу
             System.out.println(key + " value=" + map.get(key));
         }
@@ -28,7 +28,7 @@ public class Main2 {
         Set<Map.Entry<Integer, List<String>>> entries = map.entrySet();
         for (Map.Entry<Integer, List<String>> entry : entries){ // перебераем по Entry
             System.out.println(entry.getKey() + " " + entry.getValue());
-        }
+        }*/
 
     }
 }
