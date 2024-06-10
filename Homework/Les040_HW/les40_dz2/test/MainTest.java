@@ -27,8 +27,6 @@ class MainTest {
 
         Map<String, Integer> actualResult = Main.attendanceClass(student);
 
-        Assertions.(expectedResult, actualResult);
-
-
+        Assertions.assertEquals(expectedResult, actualResult);
     }
 }

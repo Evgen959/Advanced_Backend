@@ -23,10 +23,7 @@ public class Main {
             } else {
                 map.put(s, 1);
             }
-
         }
-
-
         return map;
     }
 }
