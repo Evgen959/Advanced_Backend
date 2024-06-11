@@ -11,9 +11,9 @@ class MainTest {
 
     @Test
     void attendanceClass() {
-        List<String> student = List.of("Jeck", "Ann", "Ivan", "Egor", "Olga",
-                                                "Jeck", "Nick", "Ann", "Ivan", "Olga",
-                                                "Jeck", "Nick", "Ann", "Ivan", "Kat", "Egor"
+        List<String> student = List.of("Jack", "Ann", "Ivan", "Egor", "Olga",
+                                                "Jack", "Nick", "Ann", "Ivan", "Olga",
+                                                "Jack", "Nick", "Ann", "Ivan", "Kat", "Egor"
         );
 
         Map<String,Integer> expectedResult = new HashMap<>();
