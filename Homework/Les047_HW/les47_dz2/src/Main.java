@@ -13,7 +13,34 @@
 
 
 public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello world!");
+    public static void main(String[] args) throws ProgrammerBusyException, ProgrammerUnavailableNowException  {
+        Programmer programmer = new Programmer("Jack", "доступен");
+        Programmer programmer2 = new Programmer("Jack", "занят");
+        Programmer programmer3 = new Programmer("Jack", "не доступен");
+
+        try {
+
+            System.out.println(doWork(programmer.getStatus()));
+            // ДОСТУПЕН
+            System.out.println(doWork(programmer2.getStatus()));
+            // Программист занят другой задачей
+            System.out.println(doWork(programmer3.getStatus()));
+            // Программист не доступен
+
+        }catch (ProgrammerBusyException e){
+            System.out.println("Программист занят другой задачей");
+        }catch (ProgrammerUnavailableNowException e){
+            System.out.println("Программист не доступен");
+        }
+    }
+
+    public static String doWork(String taskMsg) throws ProgrammerBusyException, ProgrammerUnavailableNowException{
+        if (taskMsg == "занят"){
+            throw new ProgrammerBusyException();
+        }
+        if (taskMsg == "не доступен"){
+            throw new ProgrammerUnavailableNowException();
+        }
+        return taskMsg.toUpperCase();
     }
 }
