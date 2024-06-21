@@ -14,29 +14,44 @@ jpeg с последовательности ff d8   java .class файл с ш�
 
 
 import java.io.*;
-import java.net.MalformedURLException;
-import java.net.URL;
-// Работа с файлом (чтение из интернета)
+
 public class Main {
-    public static void main(String[] args) throws IOException {
-        copy();
+    public static void main(String[] args) {
+        String inputFile = "../file.dat";
 
-    }
+        String outputFile1 = "../test_temp/file1.dat";
+        String outputFile2 = "../test_temp/file2.dat";
+        String outputFile3 = "../test_temp/file3.dat";
 
-    public static void copy() throws IOException{
-        URL url = new URL("https://drive.google.com/file/d/1XZrLLuJlHK3n35NwQAnY9t1nSwZ3-piq/view?usp=sharing");
-        try (InputStream is = new  BufferedInputStream(url.openStream());
-             OutputStream os = new BufferedOutputStream(new FileOutputStream("../test_temp/1copy.dat"))) {
-            int count =0;
-            int data;
-            while ((data= is.read())!=-1){
-                count++;
-                if (count%1000==0){
-                    System.out.println(count);
-                }
-                os.write(data);
+        int file1Size = 601;
+        int file2Size = 57053;
+        int file3Size = 22494;
+
+        try (FileInputStream inputStream = new FileInputStream(inputFile);
+             FileOutputStream outputStream1 = new FileOutputStream(outputFile1);
+             FileOutputStream outputStream2 = new FileOutputStream(outputFile2);
+             FileOutputStream outputStream3 = new FileOutputStream(outputFile3);
+        ) {
+            byte[] buffer = new byte[file1Size];
+            int bytes = inputStream.read(buffer);
+            if (bytes!=-1){
+                outputStream1.write(buffer, 0, bytes);
             }
-        }
 
+            buffer = new byte[file2Size];
+            bytes = inputStream.read(buffer);
+            if (bytes!=-1){
+                outputStream2.write(buffer, 0, bytes);
+            }
+
+            buffer = new byte[file3Size];
+            bytes = inputStream.read(buffer);
+            if (bytes!=-1){
+                outputStream3.write(buffer, 0, bytes);
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

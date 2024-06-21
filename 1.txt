@@ -1,1 +1,1 @@
-hello java!!! Привет джава!
+hello java
